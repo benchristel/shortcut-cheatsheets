@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shortcut Cheatsheets</title>
+    <style>
+        body {
+            font-family: Helvetica;
+        }
+
+        .row {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .row:after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+
+        .keystroke {
+            float: left;
+            display: block;
+            width: 120px;
+            font-weight: bold;
+        }
+
+        .keystroke > * {
+            vertical-align: middle;
+        }
+
+        .key-images {
+            font-size: 0; /* ensure spaces around <span> elements aren't visible */
+            display: inline-block;
+            width: 52px;
+            height: 21px;
+            baseline-shift: -50%;
+        }
+
+        .key-images span {
+            margin: 1px;
+        }
+
+        .key-images .shift-image {
+            display: inline-block;
+            width: 23px;
+            height: 9px;
+            border: 1px solid black;
+        }
+
+        .key-images .ctrl-image, .key-images .cmd-image {
+            display: inline-block;
+            width: 14px;
+            height: 9px;
+            border: 1px solid black;
+        }
+
+        .key-images .alt-image {
+            display: inline-block;
+            width: 12px;
+            height: 9px;
+            border: 1px solid black;
+        }
+
+        /* pressed keys have a dark background */
+        .shift .shift-image,
+        .cmd .cmd-image,
+        .alt .alt-image,
+        .ctrl .ctrl-image {
+            background-color: #000;
+            box-shadow: inset 1px 1px #fff;
+        }
+
+        .description {
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+<h1>JetBrains IDE Shortcuts</h1>
+
+<div class="row">
+    <div class="keystroke cmd shift">
+        <span class="key-images">
+            <span class="shift-image"></span><br/>
+            <span class="ctrl-image"></span>
+            <span class="alt-image"></span>
+            <span class="cmd-image"></span>
+        </span>
+        + A
+    </div>
+
+    <div class="description">
+        Search for an editor command
+    </div>
+</div>
+
+<div class="row">
+    <div class="keystroke cmd shift">
+        <span class="key-images">
+            <span class="shift-image"></span><br/>
+            <span class="ctrl-image"></span>
+            <span class="alt-image"></span>
+            <span class="cmd-image"></span>
+        </span>
+        + O
+    </div>
+
+    <div class="description">
+        Open a file by name (uses fuzzy matching!)
+    </div>
+</div>
+
+</body>
+</html>
