@@ -5,11 +5,21 @@
     <style>
         body {
             font-family: Helvetica;
+            font-size: 12px;
+        }
+
+        h1, h2 {
+            font-weight: normal;
+            margin-bottom: 0.5em;
+        }
+
+        h2 {
+            margin-top: 2em;
         }
 
         .row {
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin-top: 1.3em;
+            margin-bottom: 1.3em;
         }
 
         .row:after {
@@ -21,7 +31,7 @@
         .keystroke {
             float: left;
             display: block;
-            width: 120px;
+            width: 10em;
             font-weight: bold;
         }
 
@@ -32,33 +42,33 @@
         .key-images {
             font-size: 0; /* ensure spaces around <span> elements aren't visible */
             display: inline-block;
-            width: 52px;
+            width: 60px;
             height: 21px;
-            baseline-shift: -50%;
         }
 
         .key-images span {
-            margin: 1px;
+            margin: 0.05em;
+            font-size: 12px;
         }
 
         .key-images .shift-image {
             display: inline-block;
-            width: 23px;
-            height: 9px;
+            width: 2em;
+            height: 0.75em;
             border: 1px solid black;
         }
 
         .key-images .ctrl-image, .key-images .cmd-image {
             display: inline-block;
-            width: 14px;
-            height: 9px;
+            width: 1.167em;
+            height: 0.75em;
             border: 1px solid black;
         }
 
         .key-images .alt-image {
             display: inline-block;
-            width: 12px;
-            height: 9px;
+            width: 1em;
+            height: 0.75em;
             border: 1px solid black;
         }
 
@@ -73,12 +83,15 @@
 
         .description {
             float: left;
+            width: 400px;
         }
 
     </style>
 </head>
 <body>
 <h1>JetBrains IDE Shortcuts</h1>
+
+<h2>If you learn only one</h2>
 
 <div class="row">
     <div class="keystroke cmd shift">
@@ -96,6 +109,8 @@
     </div>
 </div>
 
+<h2>Navigation</h2>
+
 <div class="row">
     <div class="keystroke cmd shift">
         <span class="key-images">
@@ -111,6 +126,192 @@
         Open a file by name (uses fuzzy matching!)
     </div>
 </div>
+
+<div class="row">
+    <div class="keystroke cmd">
+        <span class="key-images">
+            <span class="shift-image"></span><br/>
+            <span class="ctrl-image"></span>
+            <span class="alt-image"></span>
+            <span class="cmd-image"></span>
+        </span>
+        + [ / ]
+    </div>
+
+    <div class="description">
+        Navigate the cursor history
+    </div>
+</div>
+
+<div class="row">
+    <div class="keystroke cmd shift">
+        <span class="key-images">
+            <span class="shift-image"></span><br/>
+            <span class="ctrl-image"></span>
+            <span class="alt-image"></span>
+            <span class="cmd-image"></span>
+        </span>
+        + [ / ]
+    </div>
+
+    <div class="description">
+        Switch editor tabs
+    </div>
+</div>
+
+<div class="row">
+    <div class="keystroke cmd">
+        <span class="key-images">
+            <span class="shift-image"></span><br/>
+            <span class="ctrl-image"></span>
+            <span class="alt-image"></span>
+            <span class="cmd-image"></span>
+        </span>
+        + B
+    </div>
+
+    <div class="description">
+        Jump to the declaration of the selected item
+    </div>
+</div>
+
+<h2>Running Tests</h2>
+
+<div class="row">
+    <div class="keystroke ctrl shift">
+        <span class="key-images">
+            <span class="shift-image"></span><br/>
+            <span class="ctrl-image"></span>
+            <span class="alt-image"></span>
+            <span class="cmd-image"></span>
+        </span>
+        + R
+    </div>
+
+    <div class="description">
+        Run the test containing the insertion point
+    </div>
+</div>
+
+<div class="row">
+    <div class="keystroke ctrl">
+        <span class="key-images">
+            <span class="shift-image"></span><br/>
+            <span class="ctrl-image"></span>
+            <span class="alt-image"></span>
+            <span class="cmd-image"></span>
+        </span>
+        + R
+    </div>
+
+    <div class="description">
+        Re-run the most recent test(s)
+    </div>
+</div>
+
+<h2>Editing Code</h2>
+
+<div class="row">
+    <div class="keystroke alt">
+        <span class="key-images">
+            <span class="shift-image"></span><br/>
+            <span class="ctrl-image"></span>
+            <span class="alt-image"></span>
+            <span class="cmd-image"></span>
+        </span>
+        + enter
+    </div>
+
+    <div class="description">
+        Accept a suggestion (when the lightbulb appears)
+    </div>
+</div>
+
+
+<h2>Git</h2>
+
+<div class="row">
+    <div class="keystroke cmd">
+        <span class="key-images">
+            <span class="shift-image"></span><br/>
+            <span class="ctrl-image"></span>
+            <span class="alt-image"></span>
+            <span class="cmd-image"></span>
+        </span>
+        + K
+    </div>
+
+    <div class="description">
+        View the commit dialog
+    </div>
+</div>
+
+<h2>Search and Replace</h2>
+
+<div class="row">
+    <div class="keystroke cmd">
+        <span class="key-images">
+            <span class="shift-image"></span><br/>
+            <span class="ctrl-image"></span>
+            <span class="alt-image"></span>
+            <span class="cmd-image"></span>
+        </span>
+        + F
+    </div>
+
+    <div class="description">
+        Find in current file
+    </div>
+</div>
+
+<div class="row">
+    <div class="keystroke cmd">
+        <span class="key-images">
+            <span class="shift-image"></span><br/>
+            <span class="ctrl-image"></span>
+            <span class="alt-image"></span>
+            <span class="cmd-image"></span>
+        </span>
+        + R
+    </div>
+
+    <div class="description">
+        Replace in current file
+    </div>
+</div>
+
+<div class="row">
+    <div class="keystroke cmd shift">
+        <span class="key-images">
+            <span class="shift-image"></span><br/>
+            <span class="ctrl-image"></span>
+            <span class="alt-image"></span>
+            <span class="cmd-image"></span>
+        </span>
+        + F/R
+    </div>
+
+    <div class="description">
+        Find/replace globally
+    </div>
+</div>
+
+<div class="row">
+    <div class="keystroke ctrl">
+        <span class="key-images">
+            <span class="shift-image"></span><br/>
+            <span class="ctrl-image"></span>
+            <span class="alt-image"></span>
+            <span class="cmd-image"></span>
+        </span>
+        + G
+    </div>
+
+    <div class="description">
+        Multi-select
+    </div>
+</div>
+
 
 </body>
 </html>
