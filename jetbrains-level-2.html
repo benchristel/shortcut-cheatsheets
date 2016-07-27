@@ -2,316 +2,97 @@
 <html>
 <head>
     <title>Shortcut Cheatsheets</title>
-    <style>
-        body {
-            font-family: Helvetica;
-            font-size: 12px;
-        }
-
-        h1, h2 {
-            font-weight: normal;
-            margin-bottom: 0.5em;
-        }
-
-        h2 {
-            margin-top: 2em;
-        }
-
-        .row {
-            margin-top: 1.3em;
-            margin-bottom: 1.3em;
-        }
-
-        .row:after {
-            content: ' ';
-            display: block;
-            clear: both;
-        }
-
-        .keystroke {
-            float: left;
-            display: block;
-            width: 10em;
-            font-weight: bold;
-        }
-
-        .keystroke > * {
-            vertical-align: middle;
-        }
-
-        .key-images {
-            font-size: 0; /* ensure spaces around <span> elements aren't visible */
-            display: inline-block;
-            width: 60px;
-            height: 21px;
-        }
-
-        .key-images span {
-            margin: 0.05em;
-            font-size: 12px;
-        }
-
-        .key-images .shift-image {
-            display: inline-block;
-            width: 2em;
-            height: 0.75em;
-            border: 1px solid black;
-        }
-
-        .key-images .ctrl-image, .key-images .cmd-image {
-            display: inline-block;
-            width: 1.167em;
-            height: 0.75em;
-            border: 1px solid black;
-        }
-
-        .key-images .alt-image {
-            display: inline-block;
-            width: 1em;
-            height: 0.75em;
-            border: 1px solid black;
-        }
-
-        /* pressed keys have a dark background */
-        .shift .shift-image,
-        .cmd .cmd-image,
-        .alt .alt-image,
-        .ctrl .ctrl-image {
-            /* background-color doesn't show up in print media, which is why box-shadow is used here */
-            box-shadow: inset 10px 10px #000;
-        }
-
-        .description {
-            float: left;
-            width: 400px;
-        }
-
-    </style>
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
 <h1>JetBrains IDE Shortcuts</h1>
 
 <h2>If you learn only one</h2>
 
-<div class="row">
-    <div class="keystroke cmd shift">
-        <span class="key-images">
-            <span class="shift-image"></span><br/>
-            <span class="ctrl-image"></span>
-            <span class="alt-image"></span>
-            <span class="cmd-image"></span>
-        </span>
-        + A
-    </div>
+<div data-shortcut
+     data-modifiers="cmd shift"
+     data-key="A"
+     data-description="Search for an editor command"></div>
 
-    <div class="description">
-        Search for an editor command
-    </div>
-</div>
 
 <h2>Navigation</h2>
 
-<div class="row">
-    <div class="keystroke cmd shift">
-        <span class="key-images">
-            <span class="shift-image"></span><br/>
-            <span class="ctrl-image"></span>
-            <span class="alt-image"></span>
-            <span class="cmd-image"></span>
-        </span>
-        + O
-    </div>
+<div data-shortcut
+     data-modifiers="cmd shift"
+     data-key="O"
+     data-description="Open a file by name (uses fuzzy matching!)"></div>
 
-    <div class="description">
-        Open a file by name (uses fuzzy matching!)
-    </div>
-</div>
+<div data-shortcut
+     data-modifiers="cmd"
+     data-key="[ / ]"
+     data-description="Navigate the cursor history"></div>
 
-<div class="row">
-    <div class="keystroke cmd">
-        <span class="key-images">
-            <span class="shift-image"></span><br/>
-            <span class="ctrl-image"></span>
-            <span class="alt-image"></span>
-            <span class="cmd-image"></span>
-        </span>
-        + [ / ]
-    </div>
+<div data-shortcut
+     data-modifiers="cmd shift"
+     data-key="[ / ]"
+     data-description="Switch editor tabs"></div>
 
-    <div class="description">
-        Navigate the cursor history
-    </div>
-</div>
+<div data-shortcut
+     data-modifiers="cmd"
+     data-key="B"
+     data-description="Jump to the declaration of the selected item"></div>
 
-<div class="row">
-    <div class="keystroke cmd shift">
-        <span class="key-images">
-            <span class="shift-image"></span><br/>
-            <span class="ctrl-image"></span>
-            <span class="alt-image"></span>
-            <span class="cmd-image"></span>
-        </span>
-        + [ / ]
-    </div>
 
-    <div class="description">
-        Switch editor tabs
-    </div>
-</div>
-
-<div class="row">
-    <div class="keystroke cmd">
-        <span class="key-images">
-            <span class="shift-image"></span><br/>
-            <span class="ctrl-image"></span>
-            <span class="alt-image"></span>
-            <span class="cmd-image"></span>
-        </span>
-        + B
-    </div>
-
-    <div class="description">
-        Jump to the declaration of the selected item
-    </div>
-</div>
 
 <h2>Running Tests</h2>
 
-<div class="row">
-    <div class="keystroke ctrl shift">
-        <span class="key-images">
-            <span class="shift-image"></span><br/>
-            <span class="ctrl-image"></span>
-            <span class="alt-image"></span>
-            <span class="cmd-image"></span>
-        </span>
-        + R
-    </div>
+<div data-shortcut
+     data-modifiers="ctrl shift"
+     data-key="R"
+     data-description="Run the test containing the insertion point"></div>
 
-    <div class="description">
-        Run the test containing the insertion point
-    </div>
-</div>
+<div data-shortcut
+     data-modifiers="ctrl"
+     data-key="R"
+     data-description="Re-run the most recent test(s)"></div>
 
-<div class="row">
-    <div class="keystroke ctrl">
-        <span class="key-images">
-            <span class="shift-image"></span><br/>
-            <span class="ctrl-image"></span>
-            <span class="alt-image"></span>
-            <span class="cmd-image"></span>
-        </span>
-        + R
-    </div>
 
-    <div class="description">
-        Re-run the most recent test(s)
-    </div>
-</div>
 
 <h2>Editing Code</h2>
 
-<div class="row">
-    <div class="keystroke alt">
-        <span class="key-images">
-            <span class="shift-image"></span><br/>
-            <span class="ctrl-image"></span>
-            <span class="alt-image"></span>
-            <span class="cmd-image"></span>
-        </span>
-        + enter
-    </div>
+<div data-shortcut
+     data-modifiers="alt"
+     data-key="enter"
+     data-description="Accept a suggestion (when the lightbulb appears)"></div>
 
-    <div class="description">
-        Accept a suggestion (when the lightbulb appears)
-    </div>
-</div>
 
 
 <h2>Git</h2>
 
-<div class="row">
-    <div class="keystroke cmd">
-        <span class="key-images">
-            <span class="shift-image"></span><br/>
-            <span class="ctrl-image"></span>
-            <span class="alt-image"></span>
-            <span class="cmd-image"></span>
-        </span>
-        + K
-    </div>
+<div data-shortcut
+     data-modifiers="cmd"
+     data-key="K"
+     data-description="View the commit dialog"></div>
 
-    <div class="description">
-        View the commit dialog
-    </div>
-</div>
+
 
 <h2>Search and Replace</h2>
 
-<div class="row">
-    <div class="keystroke cmd">
-        <span class="key-images">
-            <span class="shift-image"></span><br/>
-            <span class="ctrl-image"></span>
-            <span class="alt-image"></span>
-            <span class="cmd-image"></span>
-        </span>
-        + F
-    </div>
+<div data-shortcut
+     data-modifiers="cmd"
+     data-key="F"
+     data-description="Find in current file"></div>
 
-    <div class="description">
-        Find in current file
-    </div>
-</div>
+<div data-shortcut
+     data-modifiers="cmd"
+     data-key="R"
+     data-description="Replace in current file"></div>
 
-<div class="row">
-    <div class="keystroke cmd">
-        <span class="key-images">
-            <span class="shift-image"></span><br/>
-            <span class="ctrl-image"></span>
-            <span class="alt-image"></span>
-            <span class="cmd-image"></span>
-        </span>
-        + R
-    </div>
+<div data-shortcut
+     data-modifiers="cmd shift"
+     data-key="F/R"
+     data-description="Find/replace globally"></div>
 
-    <div class="description">
-        Replace in current file
-    </div>
-</div>
+<div data-shortcut
+     data-modifiers="ctrl"
+     data-key="G"
+     data-description="Multi-select"></div>
 
-<div class="row">
-    <div class="keystroke cmd shift">
-        <span class="key-images">
-            <span class="shift-image"></span><br/>
-            <span class="ctrl-image"></span>
-            <span class="alt-image"></span>
-            <span class="cmd-image"></span>
-        </span>
-        + F/R
-    </div>
-
-    <div class="description">
-        Find/replace globally
-    </div>
-</div>
-
-<div class="row">
-    <div class="keystroke ctrl">
-        <span class="key-images">
-            <span class="shift-image"></span><br/>
-            <span class="ctrl-image"></span>
-            <span class="alt-image"></span>
-            <span class="cmd-image"></span>
-        </span>
-        + G
-    </div>
-
-    <div class="description">
-        Multi-select
-    </div>
-</div>
-
-
+<script type="text/javascript" src="render-shortcuts.js"></script>
 </body>
 </html>

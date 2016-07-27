@@ -1,0 +1,82 @@
+body {
+    font-family: Helvetica;
+    font-size: 12px;
+}
+
+h1, h2 {
+    font-weight: normal;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+.row {
+    margin-top: 1.3em;
+    margin-bottom: 1.3em;
+}
+
+.row:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.keystroke {
+    float: left;
+    display: block;
+    width: 10em;
+    font-weight: bold;
+}
+
+.keystroke > * {
+    vertical-align: middle;
+}
+
+.key-images {
+    font-size: 0; /* ensure spaces around <span> elements aren't visible */
+    display: inline-block;
+    width: 60px;
+    height: 21px;
+}
+
+.key-images span {
+    margin: 0.05em;
+    font-size: 12px;
+}
+
+.key-images .shift-image {
+    display: inline-block;
+    width: 2em;
+    height: 0.75em;
+    border: 1px solid black;
+}
+
+.key-images .ctrl-image, .key-images .cmd-image {
+    display: inline-block;
+    width: 1.167em;
+    height: 0.75em;
+    border: 1px solid black;
+}
+
+.key-images .alt-image {
+    display: inline-block;
+    width: 1em;
+    height: 0.75em;
+    border: 1px solid black;
+}
+
+/* pressed keys have a dark background */
+.shift .shift-image,
+.cmd .cmd-image,
+.alt .alt-image,
+.ctrl .ctrl-image {
+    /* background-color doesn't show up in print media, which is why box-shadow is used here */
+    box-shadow: inset 10px 10px #000;
+}
+
+.description {
+    float: left;
+    width: 400px;
+}
