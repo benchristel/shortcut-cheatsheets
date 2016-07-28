@@ -17,7 +17,7 @@ function dangerouslyRenderShortcut(modifierKeys, key, description) {
     '</div>')
 }
 
-var shortcutElements = document.querySelectorAll('[data-shortcut]');
+var shortcutElements = document.querySelectorAll('[data-key]');
 
 for (var i = 0; i < shortcutElements.length; i++) {
     var shortcut = shortcutElements[i];
