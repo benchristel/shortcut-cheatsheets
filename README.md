@@ -2,6 +2,8 @@
 
 This repo contains printable HTML pages that offer a handy guide to commonly-used keyboard shortcuts.
 
+They're on Github Pages! **https://benchristel.github.io/shortcut-cheatsheets**.
+
 ## Contributing
 
 1. [Fork this repo](https://github.com/benchristel/shortcut-cheatsheets#fork-destination-box).
